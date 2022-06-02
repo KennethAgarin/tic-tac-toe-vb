@@ -78,14 +78,33 @@ namespace TicTacToe_Kenneth
 
                 if (combination.Equals("OOO"))
                 {
+                    reset();
                     MessageBox.Show("Player O has won the game!", "You are a Winner!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
                 else if (combination.Equals("XXX"))
                 {
+                    reset();
                     MessageBox.Show("Player X has won the game!", "You are a Winner!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 
                 }
             }
+        }
+
+
+        public void reset()
+        {
+            button1.Text = "";
+            button2.Text = "";
+            button3.Text = "";
+            button4.Text = "";
+            button5.Text = "";
+            button6.Text = "";
+            button7.Text = "";
+            button8.Text = "";
+            button9.Text = "";
+            gameBoard = new string[9];
+            currentturn = 0;
+
         }
 
         private void button1_Click(object sender, EventArgs e)

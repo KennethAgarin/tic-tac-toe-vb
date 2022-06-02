@@ -42,11 +42,58 @@ namespace TicTacToe_Kenneth
             }
         }
 
+        public void checkForWinner()
+        {
+            for (int i = 0; i < 8; i++)
+            {
+                String combination = "";
+
+                switch (i)
+                {
+                    case 0:
+                        combination = gameBoard[0] + gameBoard[4] + gameBoard[8];
+                        break;
+                    case 1:
+                        combination = gameBoard[2] + gameBoard[4] + gameBoard[6];
+                        break;
+                    case 2:
+                        combination = gameBoard[0] + gameBoard[1] + gameBoard[2];
+                        break;
+                    case 3:
+                        combination = gameBoard[3] + gameBoard[4] + gameBoard[5];
+                        break;
+                    case 4:
+                        combination = gameBoard[6] + gameBoard[7] + gameBoard[8];
+                        break;
+                    case 5:
+                        combination = gameBoard[0] + gameBoard[3] + gameBoard[6];
+                        break;
+                    case 6:
+                        combination = gameBoard[1] + gameBoard[4] + gameBoard[7];
+                        break;
+                    case 7:
+                        combination = gameBoard[2] + gameBoard[5] + gameBoard[8];
+                        break;
+                }
+
+                if (combination.Equals("OOO"))
+                {
+                    MessageBox.Show("Player O has won the game!", "You are a Winner!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
+                else if (combination.Equals("XXX"))
+                {
+                    MessageBox.Show("Player X has won the game!", "You are a Winner!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+
+                }
+            }
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             currentturn++;
             gameBoard[0] = returnSymbol(currentturn);
             button1.Text = gameBoard[0];
+            checkForWinner();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -54,6 +101,7 @@ namespace TicTacToe_Kenneth
             currentturn++;
             gameBoard[1] = returnSymbol(currentturn);
             button2.Text = gameBoard[1];
+            checkForWinner();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -61,6 +109,7 @@ namespace TicTacToe_Kenneth
             currentturn++;
             gameBoard[2] = returnSymbol(currentturn);
             button3.Text = gameBoard[2];
+            checkForWinner();
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -68,6 +117,7 @@ namespace TicTacToe_Kenneth
             currentturn++;
             gameBoard[3] = returnSymbol(currentturn);
             button4.Text = gameBoard[3];
+            checkForWinner();
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -75,6 +125,7 @@ namespace TicTacToe_Kenneth
             currentturn++;
             gameBoard[4] = returnSymbol(currentturn);
             button5.Text = gameBoard[4];
+            checkForWinner();
         }
 
         private void button6_Click(object sender, EventArgs e)
@@ -82,6 +133,7 @@ namespace TicTacToe_Kenneth
             currentturn++;
             gameBoard[5] = returnSymbol(currentturn);
             button6.Text = gameBoard[5];
+            checkForWinner();
         }
 
         private void button7_Click(object sender, EventArgs e)
@@ -89,6 +141,7 @@ namespace TicTacToe_Kenneth
             currentturn++;
             gameBoard[6] = returnSymbol(currentturn);
             button7.Text = gameBoard[6];
+            checkForWinner();
         }
 
         private void button8_Click(object sender, EventArgs e)
@@ -96,6 +149,7 @@ namespace TicTacToe_Kenneth
             currentturn++;
             gameBoard[7] = returnSymbol(currentturn);
             button8.Text = gameBoard[7];
+            checkForWinner();
         }
 
         private void button9_Click(object sender, EventArgs e)
@@ -103,6 +157,7 @@ namespace TicTacToe_Kenneth
             currentturn++;
             gameBoard[8] = returnSymbol(currentturn);
             button9.Text = gameBoard[8];
+            checkForWinner();
         }
     }
 }

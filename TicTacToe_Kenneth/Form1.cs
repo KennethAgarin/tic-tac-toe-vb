@@ -87,6 +87,7 @@ namespace TicTacToe_Kenneth
                     MessageBox.Show("Player X has won the game!", "You are a Winner!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 
                 }
+                checkDraw();
             }
         }
 
@@ -105,6 +106,23 @@ namespace TicTacToe_Kenneth
             gameBoard = new string[9];
             currentturn = 0;
 
+        }
+
+        public void checkDraw()
+        {
+            int counter = 0;
+            for (int i = 0; i < gameBoard.Length; i++)
+            {
+                if (gameBoard[i] != null) { counter++; }
+
+                if (counter == 9)
+                {
+                    reset();
+                    MessageBox.Show("You're both good. That's a Draw!", "Oops. No winner this round", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
+
+
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)

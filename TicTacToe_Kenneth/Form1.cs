@@ -198,5 +198,15 @@ namespace TicTacToe_Kenneth
             button9.Text = gameBoard[8];
             checkForWinner();
         }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            Application.Restart();
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

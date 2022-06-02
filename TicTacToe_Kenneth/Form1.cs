@@ -80,11 +80,13 @@ namespace TicTacToe_Kenneth
                 {
                     reset();
                     MessageBox.Show("Player O has won the game!", "You are a Winner!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    O_win.Text = (Int32.Parse(O_win.Text) + 1).ToString();
                 }
                 else if (combination.Equals("XXX"))
                 {
                     reset();
                     MessageBox.Show("Player X has won the game!", "You are a Winner!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    X_win.Text = (Int32.Parse(X_win.Text) + 1).ToString();
 
                 }
                 checkDraw();

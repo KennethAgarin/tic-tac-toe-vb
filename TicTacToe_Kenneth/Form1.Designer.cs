@@ -41,6 +41,10 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.O_win = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.X_win = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -51,7 +55,7 @@
             this.menuToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(530, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(482, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "Menu";
             // 
@@ -186,12 +190,60 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // O_win
+            // 
+            this.O_win.AutoSize = true;
+            this.O_win.Font = new System.Drawing.Font("Gill Sans MT Ext Condensed Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.O_win.ForeColor = System.Drawing.Color.White;
+            this.O_win.Location = new System.Drawing.Point(393, 162);
+            this.O_win.Name = "O_win";
+            this.O_win.Size = new System.Drawing.Size(32, 40);
+            this.O_win.TabIndex = 22;
+            this.O_win.Text = " 0";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Gill Sans MT Ext Condensed Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(311, 162);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(83, 40);
+            this.label8.TabIndex = 21;
+            this.label8.Text = "Player O:";
+            // 
+            // X_win
+            // 
+            this.X_win.AutoSize = true;
+            this.X_win.Font = new System.Drawing.Font("Gill Sans MT Ext Condensed Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.X_win.ForeColor = System.Drawing.Color.White;
+            this.X_win.Location = new System.Drawing.Point(392, 122);
+            this.X_win.Name = "X_win";
+            this.X_win.Size = new System.Drawing.Size(32, 40);
+            this.X_win.TabIndex = 20;
+            this.X_win.Text = " 0";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Gill Sans MT Ext Condensed Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(310, 122);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(83, 40);
+            this.label5.TabIndex = 19;
+            this.label5.Text = "Player X:";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(52)))), ((int)(((byte)(98)))));
-            this.ClientSize = new System.Drawing.Size(530, 450);
+            this.ClientSize = new System.Drawing.Size(482, 450);
+            this.Controls.Add(this.O_win);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.X_win);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.button7);
@@ -228,6 +280,10 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label O_win;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label X_win;
+        private System.Windows.Forms.Label label5;
     }
 }
 

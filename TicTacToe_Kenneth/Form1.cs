@@ -39,6 +39,7 @@ namespace TicTacToe_Kenneth
             else
             {
                 return "X";
+
             }
         }
 
@@ -132,7 +133,6 @@ namespace TicTacToe_Kenneth
             currentturn++;
             gameBoard[0] = returnSymbol(currentturn);
             button1.Text = gameBoard[0];
-            button1.Enabled = false;
             checkForWinner();
         }
 
@@ -141,7 +141,6 @@ namespace TicTacToe_Kenneth
             currentturn++;
             gameBoard[1] = returnSymbol(currentturn);
             button2.Text = gameBoard[1];
-            button2.Enabled = false;
             checkForWinner();
         }
 
@@ -150,7 +149,6 @@ namespace TicTacToe_Kenneth
             currentturn++;
             gameBoard[2] = returnSymbol(currentturn);
             button3.Text = gameBoard[2];
-            button3.Enabled = false;
             checkForWinner();
         }
 
@@ -159,7 +157,6 @@ namespace TicTacToe_Kenneth
             currentturn++;
             gameBoard[3] = returnSymbol(currentturn);
             button4.Text = gameBoard[3];
-            button4.Enabled = false;
             checkForWinner();
         }
 
@@ -168,7 +165,6 @@ namespace TicTacToe_Kenneth
             currentturn++;
             gameBoard[4] = returnSymbol(currentturn);
             button5.Text = gameBoard[4];
-            button5.Enabled = false;
             checkForWinner();
         }
 
@@ -177,7 +173,6 @@ namespace TicTacToe_Kenneth
             currentturn++;
             gameBoard[5] = returnSymbol(currentturn);
             button6.Text = gameBoard[5];
-            button6.Enabled = false;
             checkForWinner();
         }
 
@@ -186,7 +181,6 @@ namespace TicTacToe_Kenneth
             currentturn++;
             gameBoard[6] = returnSymbol(currentturn);
             button7.Text = gameBoard[6];
-            button7.Enabled = false;
             checkForWinner();
         }
 
@@ -195,7 +189,6 @@ namespace TicTacToe_Kenneth
             currentturn++;
             gameBoard[7] = returnSymbol(currentturn);
             button8.Text = gameBoard[7];
-            button8.Enabled = false;
             checkForWinner();
         }
 
@@ -204,7 +197,6 @@ namespace TicTacToe_Kenneth
             currentturn++;
             gameBoard[8] = returnSymbol(currentturn);
             button9.Text = gameBoard[8];
-            button9.Enabled = false;
             checkForWinner();
         }
 
